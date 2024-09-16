@@ -1,0 +1,982 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.container .page1{
+    width: 100%;
+    height: 100vh;
+    background: url(../Images/h.jpg) no-repeat;
+    background-size: cover;
+}
+
+nav{
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px 30px;
+    position:fixed;
+    z-index: 999;
+}
+
+nav img{
+    width: 80px;
+    height: 80px;
+}
+
+nav .name img{
+    width: 100%;
+    height: 60px;
+    position:relative;
+    top: 5px;
+    left: 0px;
+
+}
+
+nav .menu ul{
+    display: flex;
+}
+
+nav .menu ul li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: 0.2s linear;
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: yellow;
+    transition: 0.5s linear;
+}
+
+a:hover{
+    color: steelblue;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+.page1 header nav .burger svg{
+    display: none;
+ }
+ 
+ .page1 header nav svg{
+    display: none;
+ }
+
+.page1 .content{
+    margin-left: 70%;
+    padding-top: 400px;
+    color:deeppink;
+    font-size: 30px;
+}
+
+.page1 .content h1{
+    color: white;
+    margin-left: 20px;
+}
+
+.page1 .content h5{
+    color: aqua;
+}
+
+.container .page2{
+
+    width: 100%;
+    height: 100vh;
+    background: url(../Images/p1.jpg) no-repeat;
+    background-size: cover;
+}
+
+.page2 .box{
+    width: 100%;
+    height: 80%;
+    background-color: white;
+    position: relative;
+    top: 10%;
+}
+
+.page2 .box img{
+    height: 100%;
+}
+
+.page2 .box .content{
+    width: 500px;
+    flex-wrap: wrap;
+    margin-left: 450px;
+    margin-top: -500px;
+}
+
+.page2 .box .content h4{
+    color: red;
+}
+
+.page2 .box .reservation{
+    width: 25%;
+    height: 100%;
+    background-color: red;
+    margin-left: 70%;
+    margin-top: -260.5px;
+    position: absolute;
+}
+
+.reservation form{
+    padding: 50px;
+    margin-left: 20px;
+    color: white;
+}
+
+.reservation form input{
+    width: 250px;
+    height: 40px;
+}
+
+.reservation form button{
+    width: 200px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 20px;
+    color: red;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+ .container .page3{
+    width: 100%;
+    height: 100vh;
+}
+
+ .page3 h1{
+    padding: 5px;
+    text-align: center;
+}
+
+.page3 .dish{
+    width: 300px;
+    height: 600px;
+    float: left;
+    margin-left: 160px;
+}
+.page3 .dish .box{
+    width: 100%;
+    height: 32%;
+}
+
+.page3 .dish h1{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: red;
+    margin-top: -5px;
+}
+
+.dish .box{
+    padding: 10px;
+    margin-top: 2px;
+    position: relative;
+}
+
+.dish .box img{
+    width: 100%;
+    height: 26vh;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.dish .box img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.box pre{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 10px;
+    color: yellow;
+}
+
+.container .page4{
+    width: 100%;
+    height: 100vh;
+    background: url(../Images/download.jpg) no-repeat;
+    background-size: cover;
+}
+
+.page4 .content{
+    text-align: center;
+    padding-top: 50px ;
+    color: whitesmoke;
+}
+
+.page4 .content h4{
+    color: red;
+}
+
+.page4 .box{
+    width: 25%;
+    height: 70%;
+    float: left;
+    margin-top: 60px;
+    margin-left: 90px;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.page4 .box:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.page4 .box1{
+    width: 25%;
+    height: 70%;
+    background: url(../Images/c1.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.page4 .box1:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.page4 .box2{
+    width: 25%;
+    height: 70%;
+    background: url(../Images/c3.jpg) no-repeat;
+    background-size: cover;
+    background-position-y:bottom;
+}
+
+.page4 .box3{
+    width: 25%;
+    height: 70%;
+    background: url(../Images/c4.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.page4 .box .content{
+    margin-top: 453px;
+    color: black;
+    background-color: whitesmoke;
+    justify-content: center;
+    border-bottom-left-radius: 20px;
+}
+
+.page4 .box h1{
+    margin-top: -50px;
+}
+
+.page4 .box h4{
+    color: red;
+}
+
+
+
+ .container .page5{
+    width: 100%;
+    height: 100vh;
+    background: url(../Images/Crispy\ Chicken\ Katsu\ Curry\ with\ Fragrant\ Japanese\ Curry\ Sauce.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.page5 h1{
+    color: gold;
+    padding: 10px;
+}
+
+.page5 .box{
+    width: 300px;
+    height: 370px;
+    float: left;
+    margin-left: 60px;
+    border-radius: 20px;
+}
+
+.page5 .box:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.page5 .box .content{
+    background-color: snow;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.page5 .box .content h4{
+    color: red;
+}
+
+.page5 .box1{
+    margin-top: 50px;
+}
+
+.page5 .box2{
+    margin-top: 200px;
+}
+
+.page5 .box3{
+    margin-top: 50px;
+}
+
+.page5 .box4{
+    margin-top: 200px;
+}
+
+.page5 .box1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.page5 .box2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.page5 .box3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.page5 .box4 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+.container .page6{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+}
+
+.page6 h1{
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 3rem;
+}
+
+.page6 a{
+    border: 2px solid white;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    margin-left: 45%;
+}
+
+.page6 a:hover{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.page6 .box{
+    width: 100%;
+    height: 60%;
+    background-color: black;
+    margin-top: 100px;
+}
+
+.page6 .box .box1{
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-top: 60px;
+    margin-left: 160px;
+}
+
+.page6 .box .box1 pre{
+    margin-left: 3%;
+    color: white;
+    margin-top: -20px;
+}
+
+.page6 .box .box1 .p1{
+    margin-top: 20px;
+}
+
+.page6 .box .box1 h3{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.page6 .box .box4{
+    color: white;
+}
+
+.page6 p{
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+/*Media Quary for tab*/
+
+@media all and (max-width:1028px){
+
+    html,body{
+        width: 100%;
+       height: 100vh;
+       margin:0px;
+       padding: 0%;
+       overflow-x: hidden;
+       }
+         
+      
+    .container .page1{
+        width: 100%;
+    }
+
+    nav .menu ul{
+        font-size: small;
+    }
+
+    nav .name img{
+        margin-left: 220px;
+    }
+
+
+    .page1  .content{
+        margin-left: 240px;
+        font-size: 1.7rem;
+       }
+       
+    .page2 .box img{
+        width: 220px;
+        height: 25vh;
+        margin-top: 10px;
+       }
+    
+       .page2 .box .content h1{
+        margin-top: 350px;
+        margin-left:-150px;
+       }
+    
+       .page2 .box .content h4{
+        margin-top: -15px;
+        margin-left: -150px;
+        font-size: 1,2rem;
+       }
+    
+       .page2 .box .content p{
+        margin-top: 10px;
+        margin-left: -200px;
+        font-size: 1.3rem;
+        width: 90%;    
+
+       }
+       .page2 .box .reservation{
+        width: 80%;
+        height: 40vh;
+        margin-top: 5%;
+        margin-left: 80px;
+       }
+    
+       .page2 .box .reservation h1{
+        height: 10px;
+        margin-left: 150px;
+        margin-top: -40px;
+        font-size: 1.2rem;
+       }
+    
+       .page2 .box .reservation input{
+        height: 40px;
+        margin-left: 130px;
+        
+       }
+
+       .page2 .box .reservation button{
+        margin-left: 130px;
+
+       }
+
+       .container .page3{
+        height: 180vh;
+       }
+
+       .page3 .dish .box pre{
+        margin-top: 240px;
+       }
+
+       .page3 .dish .box1{
+        margin-left: -150px;
+        width: 80%;
+       }
+
+       .page3 .dish .box2{
+        margin-left: 330px;
+        width: 80%;
+        margin-top: -190px;
+       }
+
+       .page3 .dish .box3{
+        margin-left: 90px;
+        width: 80%;
+        height: 40vh;
+        margin-top: 60px;
+       }
+
+       .page3 .dish .box4{
+        margin-left: -150px;
+        width: 80%;
+       }
+
+       .page3 .dish .box5{
+        margin-left: 330px;
+        width: 80%;
+        margin-top: -190px;
+       }
+
+       .page3 .dish .box6{
+        margin-left: 90px;
+        width: 80%;
+        height: 40vh;
+        margin-top: 60px;
+       }
+
+
+
+       .page3 .dish h1{
+        width: 80%;
+        height: 4vh;
+        margin-left: 100px;
+       }
+
+       .page3 .dish .box7{
+        margin-left: -150px;
+        width: 80%;
+       }
+
+       .page3 .dish .box8{
+        margin-left: 330px;
+        width: 80%;
+        margin-top: -190px;
+       }
+
+       .page3 .dish .box9{
+        margin-left: 90px;
+        width: 80%;
+        height: 40vh;
+        margin-top: 60px;
+       }
+
+       .container .page4{
+        height: 170vh;
+       }
+
+       .page4 .content h1{
+        font-size: 1.8rem; 
+        color: goldenrod;
+       }
+    
+       .page4 .box{
+         height:45vh;
+         width: 40%;
+         padding: 20px;
+         margin-left: 100px;
+       }
+       .page4 .box2{
+        height:45vh;
+        width: 40%;
+        padding: 20px;
+        margin-left: 100px;
+      }
+
+       .page4 .box3{
+        height:45vh;
+        width: 40%;
+        padding: 20px;
+        margin-left: 100px;
+      }
+    
+       .page4 .box .content{
+        margin-top: 170px;
+        margin-left: 320px;
+        width: 70%;
+        border-top-right-radius: 20px;
+       }
+
+       .container .page5{
+        height: 100vh;
+       }
+
+       .page5 .box3{
+        margin-top:80px;
+        margin-left: 40px;
+      }
+
+      .page5 .box2{
+        margin-top: 50px;
+        margin-left: 40px;
+      }
+
+      .page5 .box4{
+        margin-top: 80px;
+        margin-left: 60px;
+      }
+
+      .container .page6{
+        position: relative;
+        height: 135vh;
+        margin-bottom: -30vh;
+      }
+
+      .page6 a{
+        margin: 0 0 0 300px;
+      }
+
+      .page6 .box .box2 h3{
+        color: yellow;
+        margin-top: -20px;
+        margin-left: -350px;
+        font-size: 2rem;
+      }
+
+      .page6 .box .box3 h3{
+        color: yellow;
+        margin-top: -220px;
+        margin-left: -350px;
+        font-size: 2rem;
+      }
+
+      .page6 .box .box4 h3{
+        color: yellow;
+        margin-top: -380px;
+        margin-left: -350px;
+        font-size: 2rem;
+      }
+
+      .page6 .box .box2 pre{
+        position: absolute;
+        color: yellow;
+        margin-top: -12%;
+        margin-left: 150px;
+        font-size: 1.5rem;
+      }
+
+      .page6 .box .box3 .p1{
+        color: yellow;
+        margin-top: -7%;
+        margin-left: 150px;
+        font-size: 1.5rem;
+      }
+      .page6 .box .box4 pre{
+        color: yellow;
+        margin-top: -10%;
+        margin-left: 150px;
+        font-size: 1.5rem;
+      }
+
+      .page6 p{
+        margin-top: 100px;
+        margin-left: 50px;
+        position: absolute;
+        font-size: 2rem;
+      }
+}
+
+@media all and (max-width:500px){
+
+    html,body{
+    width: 100%;
+    height: 100vh;
+    margin:0px;
+    padding: 0%;
+    overflow-x: hidden;
+    }
+    
+    .page1 header nav{
+        width: 100%;
+    }
+
+    .page1 .name img{
+        margin-right: 901px;
+        width: 250px;
+        letter-spacing: 30px;
+    }
+
+    .page1 header nav ul{
+         display: none ;
+    }
+
+    .page1 header nav .burger svg{
+        display: flex;  
+        background-color: whitesmoke;
+        margin-left: 340px;
+    }
+
+    .page1 header nav .burger{
+        position: fixed;
+    }
+
+
+    .page1 header nav li svg{
+        display:flex; 
+        z-index: 999;
+        background-color: whitesmoke;
+        margin-left: -30px;
+        margin-top: 20px;
+    }
+
+   .page1  .content{    
+    margin-left: 50px;
+    font-size: 1.2rem;
+   }
+   
+   .page2 .box img{
+    width: 100px;
+    height: 25vh;
+   }
+
+   .page2 .box .content h1{
+    margin-top: 350px;
+    margin-left: -300px;
+   }
+
+   .page2 .box .content h4{
+    margin-top: -15px;
+    margin-left: -300px;
+   }
+
+   .page2 .box .content p{
+    margin-top: 10px;
+    margin-left: -340px;
+    font-size: .7rem;
+    width: 250px;    
+   }
+
+   .page2 .box .reservation{
+    width: 102%;
+    height: 50vh;
+    margin-top: 6%;
+    margin-left: -7px;
+   }
+
+   .page2 .box .reservation h1{
+    height: 10px;
+    margin-top: -40px;
+    font-size: 1.2rem;
+    margin-left: 50px;
+   }
+
+   .page2 .box .reservation input{
+    height: 20px;
+    margin-left: 0px;
+   }
+
+   .page2 .box .reservation button{
+    margin-left: 25px;
+   }
+
+   .container .page3{
+    width: 100%;
+    height: 280vh;
+   }
+
+   .page3 .dish h1{
+    height: 30px;
+    margin-left: -90px;
+    font-size: larger;
+   }
+
+   .page3 .dish .box1{
+    margin-left: -90px;
+   }
+
+   .page3 .dish .box2{
+    margin-top: -5px;
+    margin-left: -90px;
+   }
+   .page3 .dish .box3{
+    margin-top: -5px;
+    margin-left: -90px;
+   }
+
+   .page3 .dish .box4{
+    margin-left: -90px;
+   }
+
+   .page3 .dish .box5{
+    margin-top: -5px;
+    margin-left: -90px;
+   }
+
+   .page3 .dish .box6{
+    margin-top: -5px;
+    margin-left: -90px;
+   }
+   .page3 .dish .box7{
+    margin-top: 5px;
+    margin-left: -90px;
+   }
+   
+   .page3 .dish .box8{
+    margin-top: -5px;
+    margin-left: -90px;
+   }
+
+   .page3 .dish .box9{
+    margin-top: -5px;
+    margin-left: -90px;
+   }
+
+   .page3 .dish .box pre{
+    margin-top: 150px;
+   }
+   
+   .page4{
+    height: 100vh;
+   }
+
+   .page4 .box{
+    width: 200px;
+    height: 250px;
+   }
+   .page4 .box .content{
+    margin-top: 200px;
+    margin-left: -20px;
+    width: 200px;
+   }
+
+   .page5 .box{
+    height:25vh;
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 80px;
+  }
+
+  .page5 .box .content{
+   margin-top: 10px;
+   font-size: .7rem;
+  }
+
+  .page5 .box1{
+    margin-left: 35px;
+  }
+
+  .page5 .box3{
+    margin-top: 130px;
+    margin-left: 35px;
+  }
+
+  .page5 .box4{
+    margin-top: 130px;
+    margin-left: 80px;
+  }
+
+  .container .page6{
+    height: 110vh;
+  }
+  .page6 h1{
+    font-size: 1.2rem;
+  }
+
+  .page6 a{
+    margin-left: 100px;
+  }
+
+  .page6 .box{
+    height: 62%;
+  }
+
+  .page6 .box .box1{
+    margin-left: -160px;
+    float: none;
+    }
+
+    .page6 .box .box2 h3{
+        margin-top: -20px;
+        margin-left: 100px;
+        font-size: small;
+        font-size: 1rem;
+    }
+
+    .page6 .box .box3 h3{
+        margin-top: -270px;
+        margin-left: 100px;
+        font-size: small;
+        font-size: 1rem;
+    }
+
+    .page6 .box .box4 h3{
+        margin-top: -250px;
+        margin-left: 120px;
+        font-size: small;
+        font-size: 1rem;
+    }
+
+    .page6 .box .box2 pre{
+        position: absolute;
+        margin-top: -4550px;
+        margin-left: 150px;
+        color: yellow;
+        font-size: small;
+        font-size: 1rem;
+    }
+    .page6 .box .box3 .p1{
+        margin-top: -33px;
+        font-size: 1rem;
+    }
+
+    .page6 .box .box2 pre{
+        margin-top: -70px;
+        margin-left: 300px;
+    }
+    .page6 .box .box3 .p1{
+        margin-left: 300px;
+    }
+    .page6 .box .box4 pre{
+        margin-top: -75px;
+        margin-left: 300px;
+        font-size: 1rem;
+    }
+
+    .page6 p{
+        margin-top: 15px;
+        margin-left: 0px;
+        color: white;
+        font-size: 1.1rem;
+    }
+}
